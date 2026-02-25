@@ -1,0 +1,54 @@
+/*
+*
+* Style for Lightbox
+*
+*/
+
+#rpdyt_lightboxWrapper {
+    background-color: rgba(0,0,0,0.9);
+    position: fixed;
+    width: 98vw;
+    height: 98vh;
+    top: 1%;
+    left: 1%;
+    display: block;
+    z-index: 99999;
+}
+
+.rpdyt_lightbox_overlay {
+    background-color: rgba(0,0,0,0.9);
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.rpdyt_lightbox_overlay iframe {
+    width: 98%;
+    margin-left: 1%;
+    height: calc(55.125vw); /* (98vh / 16) * 9 */
+
+}
+@media screen and (min-width: 768px) {
+    .rpdyt_lightbox_overlay iframe {
+        width: 90%;
+        margin-left: 5%;
+        height: calc(50.625vw); /* (90vh / 16) * 9 */
+    }
+}
+
+#rpdytLightboxClose {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: white;
+    font-size: 60px;
+    z-index:10;
+}
+#rpdytLightboxClose:hover {
+    color: #777;
+    cursor: pointer;
+}

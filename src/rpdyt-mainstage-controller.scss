@@ -1,0 +1,58 @@
+/*
+*
+* Style for rpdyt Mainstage
+*
+*/
+
+#rpdytMainstageWrapper {
+    position: relative;
+    display: block;
+    height: 400px;
+    width: calc(400px * 1.78);
+    max-width: 100%;
+    margin: 30px auto;
+    text-align: center;
+    border: #777 1px solid
+}
+
+.rpdytMainstage {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    height: 90%;
+    width: 90%;
+    top: 5%;
+    left: 5%;
+}
+
+#rpdytMainstagePoster {
+    position: absolute;
+    height: 90%;
+    width: 90%;
+    top: 5%;
+    left: 5%;
+    cursor: pointer;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    z-index: 100;
+}
+
+.rpdytMainstage iframe {
+    width: 98%;
+    margin-left: 1%;
+    height: auto;
+}
+
+#rpdytMainstage-close {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    top: 30px;
+    right: 30px;
+    color: #777;
+    display: none;
+}

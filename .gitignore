@@ -1,0 +1,11 @@
+/node_modules
+/vendor
+/public/*
+!/public/.gitkeep
+.env
+npm-debug.log
+*.zip
+*.mp4
+*.mov
+.DS_Store
+test-info.md

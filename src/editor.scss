@@ -1,0 +1,74 @@
+
+/**
+ * The following styles get applied inside the editor only.
+ */
+
+.wp-block-rpd-telex-block-rpd-telex-youtube-block,
+.wp-block-telex-block-rpd-telex-youtube-block {
+	.telex-youtube-block-preview {
+		padding: 10px;
+		background: #f8f9fa;
+		border: 2px dashed #cbd5e0;
+		border-radius: 8px;
+		text-align: center;
+
+		.preview-badge {
+			display: inline-flex;
+			align-items: center;
+			gap: 0.5rem;
+			padding: 0.5rem 1rem;
+			background: #fff;
+			border-radius: 20px;
+			margin-bottom: 10px;
+			font-weight: bold;
+			font-size: 14px;
+			color: #1a1a1a;
+
+			.source-type {
+				padding: 0.25rem 0.75rem;
+				background: #ff0000;
+				color: #fff;
+				border-radius: 12px;
+				font-size: 12px;
+				text-transform: uppercase;
+			}
+		}
+
+		.preview-info {
+			text-align: left;
+			max-width: 500px;
+			margin: 0 auto;
+			padding: 1.5rem;
+			background: #fff;
+			border-radius: 8px;
+			font-size: 12px;
+
+			p {
+				margin: 2px 0;
+				font-size: 12px;
+				color: #4a5568;
+			}
+
+			strong {
+				color: #1a1a1a;
+			}
+
+			ul {
+				list-style: none;
+				padding: 0;
+				margin: 2px 0;
+				font-size: 12px;
+
+				li {
+					padding: 2px 0;
+					color: #4a5568;
+					font-size: 12px;
+				}
+			}
+		}
+	}
+
+	.components-notice {
+		margin: 1rem 0 0;
+	}
+}

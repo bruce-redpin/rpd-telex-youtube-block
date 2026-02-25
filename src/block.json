@@ -1,0 +1,99 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "telex/block-rpd-telex-youtube-block",
+	"version": "0.1.0",
+	"title": "RPD YouTube Video Block",
+	"category": "media",
+	"icon": "video-alt3",
+	"description": "Display YouTube videos, playlists, or channels with advanced caching and customisation options.",
+	"example": {},
+	"attributes": {
+		"apiKey": {
+			"type": "string",
+			"default": ""
+		},
+		"sourceType": {
+			"type": "string",
+			"default": "single"
+		},
+		"videoId": {
+			"type": "string",
+			"default": ""
+		},
+		"videoIds": {
+			"type": "string",
+			"default": ""
+		},
+		"playlistId": {
+			"type": "string",
+			"default": ""
+		},
+		"channelId": {
+			"type": "string",
+			"default": ""
+		},
+		"showTitle": {
+			"type": "boolean",
+			"default": true
+		},
+		"showDescription": {
+			"type": "boolean",
+			"default": true
+		},
+		"showThumbnail": {
+			"type": "boolean",
+			"default": true
+		},
+		"showButton": {
+			"type": "boolean",
+			"default": true
+		},
+		"buttonLabel": {
+			"type": "string",
+			"default": "Watch Now"
+		},
+		"cacheRefreshInterval": {
+			"type": "number",
+			"default": 60
+		},
+		"maxResults": {
+			"type": "number",
+			"default": 10
+		},
+		"displayMode": {
+			"type": "string",
+			"default": "grid"
+		},
+		"templateFile": {
+			"type": "string",
+			"default": ""
+		},
+		"wrapperClass": {
+			"type": "string",
+			"default": "rpd-telex-youtube-video-container"
+		},
+		"framework": {
+			"type": "string",
+			"default": ""
+		},
+		"customThumbnail": {
+			"type": "string",
+			"default": ""
+		},
+		"debugMode": {
+			"type": "boolean",
+			"default": false
+		}
+	},
+	"supports": {
+		"html": false,
+		"align": true
+	},
+	"textdomain": "rpd-telex-youtube-block",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php",
+	"viewScript": "file:./view.js"
+}
